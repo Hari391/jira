@@ -1,34 +1,34 @@
 {
-    "key": "PrismV1.0",
-    "name": "Prism",
+    "key": "addon-key",
+    "name": "jira-addon",
     "description": "Addon for exporting filtered task's description based on projects, board and sprints with category",
     "vendor": {
-        "name": "RadiantQ",
-        "url": "http://www.radiantq.com"
+        "name": "abc",
+        "url": "www.abc.com"
     },
-    "baseUrl": "https://vectorworkzplugin.blob.core.windows.net/prism",
+    "baseUrl": "https://4a32b036.ngrok.io",
     "links": {
-        "self": "https://vectorworkzplugin.blob.core.windows.net/prism/atlassian-connect.json",
-        "homepage": "https://vectorworkzplugin.blob.core.windows.net/prism/atlassian-connect.json"
+        "self": "https://4a32b036.ngrok.io/atlassian-connect.json",
+        "homepage": "https://4a32b036.ngrok.io/atlassian-connect.json"
     },
     "authentication": {
         "type": "jwt"
     },
     "lifecycle": {
           "installed": "/installed",
-		  "uninstalled": "/uninstalled"
+	  "uninstalled": "/uninstalled"
     },
-	"enableLicensing": true,
+    "enableLicensing": true,
     "scopes": [
         "READ"
     ],
     "modules": {
         "generalPages": [
             {
-                "key": "filteringTasksDescription",
+                "key": "addon-key",
                 "location": "system.top.navigation.bar",
                 "name": {
-                    "value": "Prism"
+                    "value": "addonabc"
                 },
                 "url": "/activity",
                 "conditions": [{
