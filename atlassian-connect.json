@@ -1,0 +1,40 @@
+{
+    "key": "PrismV1.0",
+    "name": "Prism",
+    "description": "Addon for exporting filtered task's description based on projects, board and sprints with category",
+    "vendor": {
+        "name": "RadiantQ",
+        "url": "http://www.radiantq.com"
+    },
+    "baseUrl": "https://vectorworkzplugin.blob.core.windows.net/prism",
+    "links": {
+        "self": "https://vectorworkzplugin.blob.core.windows.net/prism/atlassian-connect.json",
+        "homepage": "https://vectorworkzplugin.blob.core.windows.net/prism/atlassian-connect.json"
+    },
+    "authentication": {
+        "type": "jwt"
+    },
+    "lifecycle": {
+          "installed": "/installed",
+		  "uninstalled": "/uninstalled"
+    },
+	"enableLicensing": true,
+    "scopes": [
+        "READ"
+    ],
+    "modules": {
+        "generalPages": [
+            {
+                "key": "filteringTasksDescription",
+                "location": "system.top.navigation.bar",
+                "name": {
+                    "value": "Prism"
+                },
+                "url": "/activity",
+                "conditions": [{
+                    "condition": "user_is_logged_in"
+                }]
+            } 
+        ]
+    }
+}
