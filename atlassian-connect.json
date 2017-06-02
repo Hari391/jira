@@ -6,10 +6,10 @@
         "name": "abc",
         "url": "www.abc.com"
     },
-    "baseUrl": "https://4a32b036.ngrok.io",
+    "baseUrl": "https://jiraaddon.herokuapp.com",
     "links": {
-        "self": "https://4a32b036.ngrok.io/atlassian-connect.json",
-        "homepage": "https://4a32b036.ngrok.io/atlassian-connect.json"
+        "self": "https://jiraaddon.herokuapp.com/atlassian-connect.json",
+        "homepage": "https://jiraaddon.herokuapp.com/atlassian-connect.json"
     },
     "authentication": {
         "type": "jwt"
