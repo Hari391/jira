@@ -18,7 +18,6 @@ module.exports = function (app, addon) {
              // served up when requested by the host
              'application/json': function () {
                  res.redirect('/atlassian-connect.json');
-                 res.status(200);
              }
          });
      });
