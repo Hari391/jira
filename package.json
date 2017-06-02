@@ -16,8 +16,8 @@
     "jugglingdb": "0.2.x",
     "jugglingdb-postgres": "latest",
     "jugglingdb-sqlite3": "0.0.5",
-    "static-expiry": "&gt;=0.0.5"    
-     "morgan": "^1.6.1",
+    "static-expiry": "&gt;=0.0.5",
+    "morgan": "^1.6.1",
     "static-expiry": ">=0.0.5"
   }
 }
