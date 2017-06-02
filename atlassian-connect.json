@@ -15,8 +15,7 @@
         "type": "jwt"
     },
     "lifecycle": {
-          "installed": "/installed",
-	  "uninstalled": "/uninstalled"
+          "installed": "/installed"
     },
     "enableLicensing": true,
     "scopes": [
