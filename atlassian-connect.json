@@ -1,6 +1,5 @@
 {
   "key": "my-addon-key",
-  "dependencies": {},
   "name": "My Connect Addon",
   "description": "A connect addon that does something",
   "vendor": {
