@@ -1,39 +1,40 @@
 {
-    "key": "addon-key",
-    "name": "abc",
-    "description": "Addon for exporting filtered task's description based on projects, board and sprints with category",
-    "vendor": {
-        "name": "abc",
-        "url": "www.abc.com"
-    },
-    "baseUrl": "https://addonabc.herokuapp.com",
-    "links": {
-        "self": "https://addonabc.herokuapp.com/atlassian-connect.json",
-        "homepage": "https://addonabc.herokuapp.com/atlassian-connect.json"
-    },
-    "authentication": {
-        "type": "jwt"
-    },
-    "lifecycle": {
-          "installed": "/installed"
-    },
-    "enableLicensing": true,
-    "scopes": [
-        "READ"
-    ],
-    "modules": {
-        "generalPages": [
-            {
-                "key": "addon-key",
-                "location": "system.top.navigation.bar",
-                "name": {
-                    "value": "addonabc"
-                },
-                "url": "/activity",
-                "conditions": [{
-                    "condition": "user_is_logged_in"
-                }]
-            } 
-        ]
+  "modules": {},
+  "key": "my-addon-key",
+  "dependencies": {},
+  "name": "My Connect Addon",
+  "description": "A connect addon that does something",
+  "vendor": {
+    "name": "My Company",
+    "url": "http://www.example.com"
+  },
+  "links": {
+    "self": "https://addonabc.herokuapp.com/atlassian-connect.json"
+  },
+  "lifecycle": {
+    "installed": "/installed",
+    "uninstalled": "/uninstalled"
+  },
+  "baseUrl": "https://addonabc.herokuapp.com",
+  "authentication": {
+    "type": "jwt"
+  },
+  "enableLicensing": true,
+  "scopes": [
+    "read",
+    "write"
+  ],
+  "translations": {
+    "paths": {
+      "en-US": "/i18n/1.0/en_US.json",
+      "en-UK": "/i18n/1.0/en_UK.json",
+      "fr-FR": "/i18n/1.0/fr_FR.json",
+      "de-DE": "/i18n/1.0/de_DE.json",
+      "pt-PT": "/i18n/1.0/pt_PT.json",
+      "es-ES": "/i18n/1.0/es_ES.json",
+      "ja-JP": "/i18n/1.0/ja_JP.json",
+      "ko-KR": "/i18n/1.0/ko_KR.json",
+      "ru-RU": "/i18n/1.0/ru_RU.json"
     }
+  }
 }
