@@ -7,7 +7,7 @@ module.exports = function (app, addon) {
      //  res.status(200);
      //});
     
-    app.get('/', function (req, res) {
+    app.get('/installed', function (req, res) {
          res.format({
              // If the request content-type is text-html, it will decide which to serve up
              'text/html': function () {
