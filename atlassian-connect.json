@@ -1,5 +1,4 @@
 {
-  "modules": {},
   "key": "my-addon-key",
   "dependencies": {},
   "name": "My Connect Addon",
@@ -36,5 +35,20 @@
       "ko-KR": "/i18n/1.0/ko_KR.json",
       "ru-RU": "/i18n/1.0/ru_RU.json"
     }
-  }
+  },
+  "modules": {
+        "generalPages": [
+            {
+                "key": "filteringTasksDescription",
+                "location": "system.top.navigation.bar",
+                "name": {
+                    "value": "addon"
+                },
+                "url": "/activity",
+                "conditions": [{
+                    "condition": "user_is_logged_in"
+                }]
+            } 
+        ]
+    }
 }
