@@ -5,6 +5,13 @@
   "scripts": {
     "start": "node app.js"
   },
+ {
+  "name": "my-addon",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "atlassian-connect-express": "2.0.0",
     "body-parser": "^1.14.2",
@@ -13,10 +20,7 @@
     "errorhandler": "^1.4.2",
     "express": "^4.13.3",
     "express-hbs": "*",
-    "jugglingdb": "0.2.x",
-    "jugglingdb-postgres": "latest",
     "jugglingdb-sqlite3": "0.0.5",
-    "static-expiry": "&gt;=0.0.5",
     "morgan": "^1.6.1",
     "static-expiry": ">=0.0.5"
   }
