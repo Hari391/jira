@@ -2,9 +2,6 @@ module.exports = function (app, addon) {
     
      // Root route. This route will serve the `atlassian-connect.json` unless the
      // documentation url inside `atlassian-connect.json` is set
-    app.get('/installed', addon.authenticate(), function (req, res) {
-        res..writeHead(200, {'Content-Type': 'text/event-stream'});
-    });
     
      app.get('/', function (req, res) {
          res.format({
