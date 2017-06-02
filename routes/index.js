@@ -12,7 +12,6 @@ module.exports = function (app, addon) {
              // If the request content-type is text-html, it will decide which to serve up
              'text/html': function () {
                  res.redirect('/atlassian-connect.json');
-                 res.status(200);
              },
              // This logic is here to make sure that the `atlassian-connect.json` is always
              // served up when requested by the host
