@@ -5,13 +5,6 @@
   "scripts": {
     "start": "node app.js"
   },
-  {
-  "name": "my-addon",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
   "dependencies": {
     "atlassian-connect-express": "2.0.0",
     "body-parser": "^1.14.2",
