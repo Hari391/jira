@@ -1,15 +1,15 @@
 {
     "key": "addon-key",
-    "name": "jira-addon",
+    "name": "abc",
     "description": "Addon for exporting filtered task's description based on projects, board and sprints with category",
     "vendor": {
         "name": "abc",
         "url": "www.abc.com"
     },
-    "baseUrl": "https://jiraaddon.herokuapp.com",
+    "baseUrl": "https://addonabc.herokuapp.com",
     "links": {
-        "self": "https://jiraaddon.herokuapp.com/atlassian-connect.json",
-        "homepage": "https://jiraaddon.herokuapp.com/atlassian-connect.json"
+        "self": "https://addonabc.herokuapp.com/atlassian-connect.json",
+        "homepage": "https://addonabc.herokuapp.com/atlassian-connect.json"
     },
     "authentication": {
         "type": "jwt"
