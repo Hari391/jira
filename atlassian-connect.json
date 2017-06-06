@@ -7,7 +7,7 @@
     "url": "http://www.example.com"
   },
   "links": {
-    "self": "{{localBaseUrl}}/atlassian-connect.json"
+    "self": "https://jiratestaddon3.herokuapp.com/atlassian-connect.json"
   },
   "lifecycle": {
     "installed": "/installed",
