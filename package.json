@@ -1,6 +1,10 @@
 {
   "name": "my-addon",
   "version": "0.0.1",
+  "engines": {
+    "node": "4.1.1",
+	"npm": "2.14.4"
+  },
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -13,6 +17,8 @@
     "errorhandler": "^1.4.2",
     "express": "^4.13.3",
     "express-hbs": "*",
+    "jugglingdb": "0.2.x",
+    "jugglingdb-postgres": "latest",
     "jugglingdb-sqlite3": "0.0.5",
     "morgan": "^1.6.1",
     "static-expiry": ">=0.0.5"
