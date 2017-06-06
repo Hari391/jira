@@ -11,31 +11,20 @@ module.exports = function (app, addon) {
          res.format({
              // If the request content-type is text-html, it will decide which to serve up
              'text/html': function () {
-                 res.redirect('/atlassian-connect.json');
+                 res.redirect(200,{'/atlassian-connect.json'});
              },
              // This logic is here to make sure that the `atlassian-connect.json` is always
              // served up when requested by the host
              'application/json': function () {
-                 res.redirect('/atlassian-connect.json');
+                 res.redirect(200,{'/atlassian-connect.json'});
              }
          });
      });
     
-    app.get('/installed', addon.authenticate(), function (req, res) {
-     res.writeHead(200, {'Content-Type': 'text/event-stream'});
+     app.get('/installed', addon.authenticate(), function (req, res) {
+        res.writeHead(200, {'Content-Type': 'text/event-stream'});
      });
-    
-    // Receiving the installed info and do something fancy with it before sending it to the installed url for further handling by Atlassian Connect Express.
-    app.post('/installed-addon', function (req, res) {
-            var settings = req.body;
-            console.log(settings);
-            localClientKey = settings.clientKey;
-            console.log("Client Key:");
-            console.log(localClientKey);
-            res.redirect('/installed');
-        }
-    );
-
+   
      // The following is stub code for a Hello World app provided by ACE.
      // You can remove this section since it's not used in this tutorial, 
      // or leave it here – it makes no difference to this add-on.
