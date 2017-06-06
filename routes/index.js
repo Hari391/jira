@@ -20,6 +20,17 @@ module.exports = function (app, addon) {
              }
          });
      });
+    
+    // Receiving the installed info and do something fancy with it before sending it to the installed url for further handling by Atlassian Connect Express.
+    app.post('/installed-addon', function (req, res) {
+            var settings = req.body;
+            console.log(settings);
+            localClientKey = settings.clientKey;
+            console.log("Client Key:");
+            console.log(localClientKey);
+            res.redirect('/installed');
+        }
+    );
 
      // The following is stub code for a Hello World app provided by ACE.
      // You can remove this section since it's not used in this tutorial, 
