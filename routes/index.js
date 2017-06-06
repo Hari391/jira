@@ -21,10 +21,6 @@ module.exports = function (app, addon) {
          });
      });
     
-    app.get('/', function (req, res) {
-        res.status(200);
-    });
-   
      // The following is stub code for a Hello World app provided by ACE.
      // You can remove this section since it's not used in this tutorial, 
      // or leave it here – it makes no difference to this add-on.
