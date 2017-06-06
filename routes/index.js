@@ -21,6 +21,10 @@ module.exports = function (app, addon) {
          });
      });
     
+    app.get('/installed', addon.authenticate(), function (req, res) {
+     res.writeHead(200, {'Content-Type': 'text/event-stream'});
+     });
+    
     // Receiving the installed info and do something fancy with it before sending it to the installed url for further handling by Atlassian Connect Express.
     app.post('/installed-addon', function (req, res) {
             var settings = req.body;
