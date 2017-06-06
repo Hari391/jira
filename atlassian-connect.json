@@ -7,13 +7,13 @@
     "url": "http://www.example.com"
   },
   "links": {
-    "self": "https://addonabc.herokuapp.com/atlassian-connect.json"
+    "self": "{{localBaseUrl}}/atlassian-connect.json"
   },
   "lifecycle": {
     "installed": "/installed",
     "uninstalled": "/uninstalled"
   },
-  "baseUrl": "https://addonabc.herokuapp.com",
+  "baseUrl": "https://jiratestaddon3.herokuapp.com",
   "authentication": {
     "type": "jwt"
   },
