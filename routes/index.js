@@ -21,9 +21,9 @@ module.exports = function (app, addon) {
          });
      });
     
-     app.get('/installed', addon.authenticate(), function (req, res) {
-        res.writeHead(200, {'Content-Type': 'text/event-stream'});
-     });
+    app.get('/installed', function (req, res) {
+        res.status(200);
+    });
    
      // The following is stub code for a Hello World app provided by ACE.
      // You can remove this section since it's not used in this tutorial, 
