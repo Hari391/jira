@@ -56,7 +56,7 @@
         //Use 'unauthorized.hbs' template for displaying an error page
         "errorTemplate": true,
         // This is the public URL to your production add-on.
-        "localBaseUrl": "https://your-subdomain.herokuapp.com",
+        "localBaseUrl": "https://jiratestaddon3.herokuapp.com",
         "store": {
             // You won't want to use the memory store in production, or your install
             // registrations will be forgotten any time your app restarts.  Here
