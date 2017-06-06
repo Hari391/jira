@@ -1,13 +1,8 @@
 module.exports = function (app, addon) {
-    
+
      // Root route. This route will serve the `atlassian-connect.json` unless the
      // documentation url inside `atlassian-connect.json` is set
-    
-     //app.get('/', function (req, res) {
-     //  res.status(200);
-     //});
-    
-    app.get('/', function (req, res) {
+     app.get('/', function (req, res) {
          res.format({
              // If the request content-type is text-html, it will decide which to serve up
              'text/html': function () {
@@ -20,7 +15,7 @@ module.exports = function (app, addon) {
              }
          });
      });
-    
+
      // The following is stub code for a Hello World app provided by ACE.
      // You can remove this section since it's not used in this tutorial, 
      // or leave it here – it makes no difference to this add-on.
