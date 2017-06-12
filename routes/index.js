@@ -17,8 +17,8 @@ module.exports = function (app, addon) {
      });
 
      app.get('/installed', function (req, res) {
-         res.redirect('/atlassian-connect.json');
          res.send(200);
+         res.redirect('/atlassian-connect.json');
      });
      
      // The following is stub code for a Hello World app provided by ACE.
