@@ -7,7 +7,8 @@
     "url": "http://www.example.com"
   },
   "links": {
-    "self": "https://herokujiratest1.herokuapp.com/atlassian-connect.json"
+    "self": "https://herokujiratest1.herokuapp.com/atlassian-connect.json",
+    "homepage": "https://herokujiratest1.herokuapp.com/atlassian-connect.json"
   },
   "lifecycle": {
     "installed": "/installed",
