@@ -6,7 +6,7 @@ module.exports = function (app, addon) {
          res.format({
              // If the request content-type is text-html, it will decide which to serve up
              'text/html': function () {
-                 res.redirect('/atlassian-connect.json');
+                 res.redirect(addon.descriptor.links.homepage);
              },
              // This logic is here to make sure that the `atlassian-connect.json` is always
              // served up when requested by the host
