@@ -17,8 +17,8 @@ module.exports = function (app, addon) {
      });
 
      app.get('/installed', function (req, res) {
-      res.writeHead(200, {'Content-Type': 'text/event-stream'});
-      });
+         res.status(200);
+     });
      
      //app.get('/installed', function (req, res) {
      //    res.send(200);
