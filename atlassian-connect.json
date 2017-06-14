@@ -8,8 +8,8 @@
     },
     "baseUrl": "https://jiraaddon.herokuapp.com/",
     "links": {
-        "self": "https://jiraaddon.herokuapp.com//atlassian-connect.json",
-        "homepage": "https://jiraaddon.herokuapp.com//atlassian-connect.json"
+        "self": "https://jiraaddon.herokuapp.com/atlassian-connect.json",
+        "homepage": "https://jiraaddon.herokuapp.com/atlassian-connect.json"
     },
     "authentication": {
         "type": "jwt"
