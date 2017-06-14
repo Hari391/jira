@@ -7,14 +7,14 @@
     "url": "http://www.example.com"
   },
   "links": {
-    "self": "https://jiratestaddon3.herokuapp.com/atlassian-connect.json",
-    "homepage": "https://jiratestaddon3.herokuapp.com/atlassian-connect.json"
+    "self": "https://jiraaddon.herokuapp.com/atlassian-connect.json",
+    "homepage": "https://jiraaddon.herokuapp.com/atlassian-connect.json"
   },
   "lifecycle": {
     "installed": "/installed",
     "uninstalled": "/uninstalled"
   },
-  "baseUrl": "https://jiratestaddon3.herokuapp.com",
+  "baseUrl": "https://jiraaddon.herokuapp.com",
   "authentication": {
     "type": "jwt"
   },
