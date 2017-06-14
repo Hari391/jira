@@ -6,7 +6,7 @@
         "name": "RadiantQ",
         "url": "http://www.radiantq.com"
     },
-    "baseUrl": "https://jiraaddon.herokuapp.com/",
+    "baseUrl": "https://jiraaddon.herokuapp.com",
     "links": {
         "self": "https://jiraaddon.herokuapp.com/atlassian-connect.json",
         "homepage": "https://jiraaddon.herokuapp.com/atlassian-connect.json"
