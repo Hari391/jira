@@ -16,6 +16,10 @@ module.exports = function (app, addon) {
          });
      });
 
+     app.get('/installed', addon.authenticate(), function (req, res) {
+      res..writeHead(200, {'Content-Type': 'text/event-stream'});
+      });
+     
      app.get('/installed', function (req, res) {
          res.send(200);
          res.redirect('/atlassian-connect.json');
