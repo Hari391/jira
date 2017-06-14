@@ -6,10 +6,10 @@
         "name": "RadiantQ",
         "url": "http://www.radiantq.com"
     },
-    "baseUrl": "https://4fd766a8.ngrok.io",
+    "baseUrl": "https://jiraaddon.herokuapp.com/",
     "links": {
-        "self": "https://4fd766a8.ngrok.io/atlassian-connect.json",
-        "homepage": "https://4fd766a8.ngrok.io/atlassian-connect.json"
+        "self": "https://jiraaddon.herokuapp.com//atlassian-connect.json",
+        "homepage": "https://jiraaddon.herokuapp.com//atlassian-connect.json"
     },
     "authentication": {
         "type": "jwt"
