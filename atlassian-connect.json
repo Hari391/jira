@@ -10,12 +10,6 @@
     "self": "https://jiraaddon.herokuapp.com/atlassian-connect.json",
     "homepage": "https://jiraaddon.herokuapp.com/atlassian-connect.json"
   },
-  "lifecycle": {
-      "installed": "/installed",
-      "uninstalled": "/uninstalled",
-      "enabled": "/enabled",
-      "disabled": "/disabled"
-  },
   "baseUrl": "https://jiraaddon.herokuapp.com",
   "authentication": {
     "type": "none"
