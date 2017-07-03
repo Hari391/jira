@@ -2,11 +2,11 @@
     "development": {
         "port": 3000,
         "errorTemplate": true,
-        "store": {
-            "adapter": "jugglingdb",
-            "type": "sqlite3",
-            "database": "store.db"
-        }
+        //"store": {
+        //    "adapter": "jugglingdb",
+        //    "type": "sqlite3",
+        //    "database": "store.db"
+        //}
     },
     "production": {
         "port": "$PORT",
